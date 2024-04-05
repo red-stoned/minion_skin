@@ -27,6 +27,5 @@ public class client implements ClientModInitializer {
 		ci.write(data);
 		ServerboundClientInformationPacket p = new ServerboundClientInformationPacket(data);
 		Minecraft.getInstance().getConnection().send(p);
-        mc.player.sendSystemMessage(Component.literal("Sent Packet"));
 	}
 }
