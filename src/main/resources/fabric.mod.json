@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "minion_skin",
+	"version": "${version}",
+	"name": "Skin Layer Fix",
+	"description": "Fix weird dominion bug where sometimes, when you join, all skin layers are off.",
+	"authors": [
+		"Galiano"
+	],
+	"contact": {
+		"homepage": "https://holebois.com",
+		"sources": "https://github.com/holebois/minion_skin",
+		"issues": "https://github.com/holebois/minion_skin/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minion_skin/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.holebois.minion_skin.client"
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
