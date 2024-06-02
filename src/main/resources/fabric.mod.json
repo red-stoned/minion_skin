@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "minion_skin",
 	"version": "${version}",
-	"name": "Skin Layer Fix",
-	"description": "Fix weird dominion bug where sometimes, when you join, all skin layers are off.",
+	"name": "Client Info Fix",
+	"description": "Fix bug where sometimes, when you join, all skin layers are off, and render distance is 2 chunks.",
 	"authors": [
 		"Galiano"
 	],
