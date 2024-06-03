@@ -23,9 +23,7 @@ public class client implements ClientModInitializer {
 		Minecraft mc = Minecraft.getInstance();
         
 		ClientInformation ci = new ClientInformation(mc.getLanguageManager().getSelected(), mc.options.renderDistance().get(), mc.options.chatVisibility().get(), mc.options.chatColors().get(), 0b01111111, mc.player.getMainArm(), false, mc.options.allowServerListing().get());
-		FriendlyByteBuf data = PacketByteBufs.create();
-		ci.write(data);
-		ServerboundClientInformationPacket p = new ServerboundClientInformationPacket(data);
+		ServerboundClientInformationPacket p = new ServerboundClientInformationPacket(ci);
 		Minecraft.getInstance().getConnection().send(p);
 	}
 }
